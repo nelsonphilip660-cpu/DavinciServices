@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #17243b;
+}
+
+header {
+    background: #101c32;
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #eab84b;
+}
+
+.back {
+    color: white;
+    text-decoration: none;
+}
+
+.city-hero {
+    background: linear-gradient(120deg, #101c32, #263d61);
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.city-hero p:first-child {
+    color: #eab84b;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.city-hero h1 {
+    font-size: clamp(32px, 5vw, 48px);
+    margin: 15px 0;
+}
+
+main {
+    padding: 45px 7%;
+}
+
+main>h2 {
+    margin-bottom: 20px;
+}
+
+.service-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.service-tags button {
+    border: 1px solid #d8deea;
+    background: white;
+    color: #17243b;
+    border-radius: 30px;
+    padding: 13px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.service-tags button:hover,
+.service-tags button.active {
+    background: #eab84b;
+    border-color: #eab84b;
+    color: #101c32;
+    transform: translateY(-3px);
+}
+
+.results-heading {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.results-heading p {
+    color: #68758a;
+}
+
+.personnel-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.person-card {
+    background: white;
+    border-radius: 12px;
+    padding: 22px;
+    box-shadow: 0 8px 25px #14213a12;
+    transition: .3s;
+}
+
+.person-card:hover {
+    transform: translateY(-6px);
+}
+
+.person-card h3 {
+    margin-bottom: 12px;
+}
+
+.person-card p {
+    color: #68758a;
+    margin: 9px 0;
+    line-height: 1.5;
+}
+
+.person-service {
+    display: inline-block;
+    background: #fff3d5;
+    color: #8a6216;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.whatsapp-link {
+    display: block;
+    background: #167b48;
+    color: white;
+    padding: 13px;
+    border-radius: 7px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 17px;
+    font-weight: bold;
+}
+
+.whatsapp-link.disabled {
+    background: #9aa3af;
+    pointer-events: none;
+}
+
+.empty-message {
+    grid-column: 1 / -1;
+    background: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    color: #68758a;
+    line-height: 1.7;
+}
+
+footer {
+    background: #101c32;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+@media(max-width: 850px) {
+    .personnel-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 600px) {
+    main {
+        padding: 35px 5%;
+    }
+
+    .personnel-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .results-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .service-tags button {
+        padding: 11px 15px;
+    }
+}

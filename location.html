@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DavinciServices Personnel</title>
+    <link rel="stylesheet" href="location.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Davinci<span>Services</span></a>
+        <a href="index.html" class="back">← Home</a>
+    </header>
+
+    <section class="city-hero">
+        <p>FIND SERVICE PERSONNEL</p>
+        <h1 id="cityTitle">Lagos Location</h1>
+        <p>Choose a service below to find available personnel.</p>
+    </section>
+
+    <main>
+        <h2>Choose Your Service</h2>
+
+        <div class="service-tags" id="serviceTags">
+            <button data-service="Laundry">Laundry</button>
+            <button data-service="Cleaning">Cleaning</button>
+            <button data-service="Housemaid">Housemaid</button>
+            <button data-service="Nail Fixer">Nail Fixer</button>
+            <button data-service="Hair Barber">Hair Barber</button>
+            <button data-service="DJ">DJ</button>
+            <button data-service="Event Planner">Event Planner</button>
+            <button data-service="Hair Stylist">Hair Stylist</button>
+            <button data-service="Photographer">Photographer</button>
+        </div>
+
+        <div class="results-heading">
+            <h2 id="resultsTitle">Available Personnel</h2>
+            <p id="resultsCount"></p>
+        </div>
+
+        <div id="personnelGrid" class="personnel-grid"></div>
+    </main>
+
+    <footer>
+        © 2026 DavinciServices
+    </footer>
+
+    <script src="location.js"></script>
+</body>
+
+</html>

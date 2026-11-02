@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DavinciServices | Your Daily Services Partner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="loader" id="loader">
+        <h2>DavinciServices</h2>
+        <div class="spinner"></div>
+    </div>
+
+    <header>
+        <a class="logo" href="index.html">Davinci<span>Services</span></a>
+
+        <button class="menu-toggle" id="menuToggle">☰</button>
+
+        <nav id="navMenu">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#locations">Locations</a>
+            <a href="#booking">Book Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="eyebrow">YOUR COMFORT IS OUR PRIORITY</p>
+            <h1>Everyday Services, <span>Made Easy.</span></h1>
+            <p>
+                Find trusted help for laundry, cleaning, errands,
+                housemaid services, nail fixing and haircuts.
+            </p>
+            <a href="#services" class="btn">Explore Services</a>
+            <a href="#booking" class="btn btn-outline">Book a Service</a>
+        </div>
+    </section>
+
+    <section class="section" id="services">
+        <div class="section-heading">
+            <p>WHAT WE OFFER</p>
+            <h2>Our Main Services</h2>
+        </div>
+
+        <div class="service-grid">
+            <article class="service-card">
+                <img src="laundry.jpg" alt="Laundry">
+                <h3>Laundry</h3>
+                <p>Convenient laundry and clothing care.</p>
+                <a href="#booking" class="text-link">Book now →</a>
+            </article>
+
+            <article class="service-card">
+                <img src="cleaner.jpg" alt="Cleaning">
+                <h3>Cleaning</h3>
+                <p>Home and office cleaning services.</p>
+                <a href="#booking" class="text-link">Book now →</a>
+            </article>
+
+            <article class="service-card">
+                <img src="hair.jpg" alt="Errands">
+                <h3>Hair Stylist</h3>
+                <p>Beauty begins with great hair.</p>
+                <a href="#booking" class="text-link">Book now →</a>
+            </article>
+
+            <article class="service-card">
+                <img src="maid.jpg" alt="Housemaid">
+                <h3>Housemaid</h3>
+                <p>Find household assistance.</p>
+                <a href="#booking" class="text-link">Book now →</a>
+            </article>
+
+            <article class="service-card">
+                <img src="fixer.jpg" alt="Nail fixer">
+                <h3>Nail Fixer</h3>
+                <p>Beauty and nail care services.</p>
+                <a href="#booking" class="text-link">Book now →</a>
+            </article>
+
+            <article class="service-card">
+                <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=800" alt="Barber">
+                <h3>Hair Barber</h3>
+                <p>Find a barber for your haircut.</p>
+                <a href="#booking" class="text-link">Book now →</a>
+            </article>
+
+              <article class="service-card">
+                <img src="dj.jpg" alt="DJ">
+                <h3>DJ</h3>
+                <p>Professional DJs for parties and events.</p>
+                <a href="#booking" class="text-link">Book now →</a>
+            </article>
+
+              <article class="service-card">
+                <img src="planner.jpg" alt="Event Planner">
+                <h3>Event Planner</h3>
+                <p>We organize weddings, birthdays and special events.</p>
+                <a href="#booking" class="text-link">Book now →</a>
+            </article>
+
+              <article class="service-card">
+                <img src="photo.jpg" alt="Photographer">
+                <h3>Photographer</h3>
+                <p>Capture your beautiful moment.</p>
+                <a href="#booking" class="text-link">Book now →</a>
+            </article>
+        </div>
+    </section>
+
+    <section class="locations section" id="locations">
+        <div class="section-heading">
+            <p>WE SERVE LAGOS</p>
+            <h2>Our Service Locations</h2>
+        </div>
+
+       <div class="location-grid">
+  <a href="location.html?city=Ajah">Ajah <span>→</span></a>
+  <a href="location.html?city=Sangotedo">Sangotedo <span>→</span></a>
+  <a href="location.html?city=Surulere">Surulere <span>→</span></a>
+  <a href="location.html?city=Bogije">Bogije <span>→</span></a>
+  <a href="location.html?city=Apapa">Apapa <span>→</span></a>
+  <a href="location.html?city=Ikeja">Ikeja <span>→</span></a>
+  <a href="location.html?city=Lekki">Lekki <span>→</span></a>
+  <a href="location.html?city=Festac%20Town">Festac Town <span>→</span></a>
+  <a href="location.html?city=Ojo">Ojo <span>→</span></a>
+  <a href="location.html?city=Maryland">Maryland <span>→</span></a>
+</div>
+    </section>
+
+    <section class="booking section" id="booking">
+        <div class="section-heading">
+            <p>LET US HELP YOU</p>
+            <h2>Book a Service</h2>
+        </div>
+
+        <form id="bookingForm">
+            <input id="customerName" type="text" placeholder="Your full name" required>
+            <input id="customerPhone" type="tel" placeholder="Your phone number" required>
+
+            <select id="bookingService" required>
+                <option value="">Choose a service</option>
+                <option>Laundry</option>
+                <option>Cleaning</option>
+                <option>Hair Stylist</option>
+                <option>Housemaid</option>
+                <option>Nail Fixer</option>
+                <option>Hair Barber</option>
+                <option>DJ</option>
+                <option>Event Planner</option>
+                <option>Photographer</option>
+                <option>Others</option>
+            </select>
+
+            <select id="bookingLocation" required>
+                <option value="">Choose your location</option>
+                <option>Ajah</option>
+                <option>Sangotedo</option>
+                <option>Surulere</option>
+                <option>Bogije</option>
+                <option>Apapa</option>
+                <option>Ikeja</option>
+                <option>Lekki</option>
+                <option>Festac Town</option>
+                <option>Ojo</option>
+                <option>Maryland</option>
+            </select>
+
+            <input id="bookingDate" type="date">
+            <textarea id="bookingMessage" placeholder="Describe the service you need"></textarea>
+
+            <button class="btn" type="submit">Continue on WhatsApp</button>
+        </form>
+
+        <p class="payment-note">Booking and payment arrangements are confirmed through WhatsApp. Pay only after
+            confirming the details.</p>
+    </section>
+
+    <section class="about section">
+        <div>
+            <p class="eyebrow">ABOUT DAVINCISERVICES</p>
+            <h2>Making everyday life easier.</h2>
+            <p>
+                DavinciServices helps customers find everyday services
+                across selected locations in Lagos. Browse our services,
+                contact us and arrange a booking with ease.
+            </p>
+        </div>
+    </section>
+
+    <section class="contact section" id="contact">
+        <div class="section-heading">
+            <p>GET IN TOUCH</p>
+            <h2>Contact Us</h2>
+        </div>
+        <p>WhatsApp: 09037141653</p>
+        <p>Email: nelsonphilip660@gmail.com</p>
+        <a class="btn" href="https://wa.me/2349037141652">Message DavinciServices</a>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <h2>DavinciServices</h2>
+                <p>Your everyday services partner.</p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#services">Our Services</a>
+                <a href="#booking">Book a Service</a>
+            </div>
+
+            <div>
+                <h3>Explore More</h3>
+                <a href="providers.html?type=veterinary">Veterinary Services</a>
+                <a href="providers.html?type=dentist">Dentist</a>
+                <a href="providers.html?type=hospital">Hospital</a>
+                <a href="providers.html?type=transportation">Transportation Services</a>
+            </div>
+
+            <div>
+                <h3>Contact</h3>
+                <p>09037141653</p>
+                <p>nelsonphilip660@gmail.com</p>
+            </div>
+        </div>
+
+        <p class="copyright">© 2026 DavinciServices. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
